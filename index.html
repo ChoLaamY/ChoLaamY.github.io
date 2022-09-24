@@ -12,6 +12,9 @@
      <!-- MUST reference the jQuery and bootstrap libraries -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!-- d3 libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
 
      <!-- stylesheet -->
      <link rel="stylesheet" href="css/index.css">
@@ -54,8 +57,8 @@
     </nav>
 
     <div class="container-fluid" style="display: unset;">
-        <div class="row" style="margin-top: 140px;">
-            <div class="col-md-12">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-12 profile">
                 <h1 class="profile"><b>Hello!</b> My name is Cho Laam.</h1>
                 <br>
                 <img src="image/profile.jpeg" class="profile" id="profileImage">
@@ -64,8 +67,8 @@
             </div>
         </div>
 
-        <div class="row sticky">
-            <div class="intro" id="introBox">
+        <div class="row snap intro">
+            <div id="introBox">
                 <p id="introText">Prior to joining the Quantitative Methods in the Social Sciences (QMSS) Master&#39;s Program at Columbia, 
                     I graduated from NYU in 2021 with a B.A. in Psychology with Honors and Comparative Literature. 
                     I have been working in research labs for 4 years, engaging in a myriad of different projects, 
@@ -74,11 +77,23 @@
             </div>
         </div>
 
-        <div class="row sticky">
-            <div style="border: navy solid 2px;"></div>
-            <h1>see my projects below</h1>
-        </div>
+        <div class="row snap projects">
+            <div class="myProjects" id="myProjects"></div>
+            <!-- <div style="border: navy solid 2px;"></div>
+            <h1>see my projects below</h1> -->
+            <!-- <div class="col-md-3">
+                    <img src="image/research.png" class="icons">               
+            </div>
+            <div class="col-md-3">
+                <img src="image/viz.png" class="icons">
+            </div>
+            <div class="col-md-3">
+                <img src="image/ml.png" class="icons">
+            </div>
+        </div> -->
     </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
     
     
 </body>
