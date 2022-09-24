@@ -4,10 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cho Laam Yuen</title>
+    <title>Cho Laam</title>
+
+     <!-- include a stylesheet to style the webpage -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- MUST reference the jQuery and bootstrap libraries -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!-- stylesheet -->
+     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <h1>Hello Welcome to my website!</h1>
+    <!-- creating a fixed navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- <a class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="logo">
+                </a> -->
+                <a class="navbar-brand" href="index.html">Cho Laam</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="" target="_blank">Resume</a></li>
+                <!-- <div class="nav-dropdown">
+                    <button class="nav-dropbtn">Projects &nbsp; &blacktriangledown;</button>
+                    <div class="project-selection">
+                        <a href="projects.html">Research</a>
+                        <a href="projects.html">Data Visualizations</a>
+                        <a href="projects.html">Machine Learning</a>
+                    </div>
+                </div> -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="https://www.linkedin.com/in/cholaam-yuen/" target="_blank">
+                    <i class="fa fa-linkedin" id="linkedin-icon"></i>
+                </a>
+                <a href="https://github.com/ChoLaamY" target="_blank">
+                    <i class="fa fa-github"  id="github-icon"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="display: unset;">
+        <div class="row" style="margin-top: 140px;">
+            <div class="col-md-12">
+                <h1 class="profile"><b>Hello!</b> My name is Cho Laam.</h1>
+                <br>
+                <img src="image/profile.jpeg" class="profile" id="profileImage">
+                <br>
+                <h3 class="profile">I am currently a Master&#39;s student at Columbia University.</h3>
+            </div>
+        </div>
+
+        <div class="row sticky">
+            <div class="intro" id="introBox">
+                <p id="introText">Prior to joining the Quantitative Methods in the Social Sciences (QMSS) Master&#39;s Program at Columbia, 
+                    I graduated from NYU in 2021 with a B.A. in Psychology with Honors and Comparative Literature. 
+                    I have been working in research labs for 4 years, engaging in a myriad of different projects, 
+                    as well as working in different research and analytical methodologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="row sticky">
+            <div style="border: navy solid 2px;"></div>
+            <h1>see my projects below</h1>
+        </div>
+    </div>
+    
     
 </body>
 </html>
