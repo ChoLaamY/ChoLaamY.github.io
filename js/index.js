@@ -1,11 +1,12 @@
-// create 3 evenly spaced circles for projects
-var margin = ({top: 50, right: 100, bottom: 50, left: 100})
+// define margin / height and width
 var e = document.documentElement;
 var c = document.getElementsByClassName('myProjects')[0];       // change this accordding to class of the div
 const windowW = window.innerWidth || e.clientWidth || c.clientWidth
+var margin = ({top: windowW / 25, right: windowW / 12, bottom: windowW / 25, left: windowW / 12})     // {top: 50, right: 100, bottom: 50, left: 100}
 const width = windowW - (margin.left + margin.right);
 const height = (width / 3) - margin.top + margin.bottom
 console.log(width)
+console.log(windowW)
 
 // create data
 var projectsList = {name: ['Research', 'Data Visualization', 'Machine Learning'],
@@ -87,11 +88,11 @@ const circles = svg.selectAll('.myCircles')
                 .append('g')
                 .attr('class', 'myCircles')
                 .attr('transform', (d, i) => {
-                    return `translate(${200 + (i * 300)}, 0)`
+                    return `translate(${(margin.left * 2) + (i * (margin.left * 3))}, 0)` // ${200 + (i * 300)}
                 });
 
 circles.append('circle')
-        .attr('cx', (d, i) => {200 * i})
+        .attr('cx', (d, i) => {(margin.left * 2) * i})    // {200 * i}
         .attr('cy', height / 2.9)
         .attr('r', width / 10)
         .attr('fill', d => {
@@ -115,20 +116,20 @@ var icon = circles.append('svg:image')
                     //     return '../image/ml.png'
                     // }
                 })
-                .attr('x', (d, i) => { return (10 * i) - 100 })
-                .attr('y', 30)
+                .attr('x', (d, i) => { return ((margin.bottom / 5) * i) - margin.left })     // (10 * i) - 100 }
+                .attr('y', (margin.left / 3))      // 30
                 .attr('width', width / 6)
                 .attr('height', width / 6)
                 .style('pointer-events', 'none')
 
 // add text
 var label = circles.append('text')
-                    .attr('x', (d, i) => { return (i / 100) + 5})
+                    .attr('x', (d, i) => { return (i / margin.left) + (margin.bottom / 10)})   // (i / 100) + 5}
                     // .attr('x', height - (width / 2.8))
                     .attr('y', height / 1.3)
                     .text(d => { return d})
                     .style('text-anchor', 'middle')
                     .style('font-family', 'Tahoma')
-                    .style('font-size', 20)
+                    .style('font-size', (margin.left / 4))         // 20
                     .style('fill', '#F2F2F2');
                     
