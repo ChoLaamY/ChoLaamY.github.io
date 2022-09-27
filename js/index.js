@@ -91,11 +91,22 @@ const circles = svg.selectAll('.myCircles')
                     return `translate(${(margin.left * 2) + (i * (margin.left * 3))}, 0)` // ${200 + (i * 300)}
                 });
 
-circles.append('circle')
+// add a tag for link on click
+circles.append('svg:a')
+        .attr('xlink:href', d=> {       //'Research', 'Data Visualization', 'Machine Learning'
+            if (d === 'Research') {
+                return 'research.html'
+            } else if (d === 'Data Visualization') {
+                return 'dataviz.html'
+            } else if (d === 'Machine Learning') {
+                return 'ml.html'
+            }
+        })
+        .append('circle')
         .attr('cx', (d, i) => {(margin.left * 2) * i})    // {200 * i}
         .attr('cy', height / 2.9)
         .attr('r', width / 10)
-        .attr('fill', d => {
+        .attr('fill', d => {        
             return palette(d)
         })
         .attr('stroke', null)

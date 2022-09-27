@@ -5,34 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cho Laam</title>
-
      <!-- include a stylesheet to style the webpage -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- MUST reference the jQuery and bootstrap libraries -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     <!-- d3 libraries -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
 
      <!-- stylesheet -->
-     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/resume.css">
 </head>
 
 <body>
     <!-- creating a fixed navbar -->
     <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header active">
+            <div class="navbar-header">
                 <!-- <a class="navbar-brand">
                     <img src="images/logo.png" alt="" class="logo">
                 </a> -->
-                <a class="navbar-brand active" href="index.html">Cho Laam</a>
+                <a class="navbar-brand" href="index.html">Cho Laam</a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li class="active"><a class="active" href="resume.html">Resume</a></li>
                 <!-- <div class="nav-dropdown">
                     <button class="nav-dropbtn">Projects &nbsp; &blacktriangledown;</button>
                     <div class="project-selection">
@@ -56,40 +52,17 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="display: unset;">
+    <!-- resume info -->
+    <div class="contaier-fluid">
         <div class="row" style="margin-top: 100px;">
-            <div class="col-md-12 profile">
-                <h1 class="profile"><b>Hello!</b> My name is Cho Laam.</h1>
-                <br>
-                <img src="image/profile.jpeg" class="profile" id="profileImage">
-                <br>
-                <h3 class="profile">I am currently a Master&#39;s student at Columbia University.</h3>
+            <div class="col-md-12">
+                <h1 id="resumeTitle">My Resume</h1>
+                <div class="embedResume">
+                    <iframe src="files/Resume - Cho Laam Yuen.pdf" width="80%", height="600px"></iframe>
+                </div>
             </div>
         </div>
-
-        <div class="row snap intro">
-            <div id="introBox">
-                <p id="introText">Prior to joining the Quantitative Methods in the Social Sciences (QMSS) Master&#39;s Program at Columbia, 
-                    I graduated from NYU (2021) with a B.A. in Psychology with Honors and Comparative Literature. 
-                    I have been working in research labs for over 4 years, engaging in a myriad of different projects, 
-                    as well as engaging with different research and analytical methodologies. 
-                    I am currently working part time at Graphen, an AI startup, 
-                    developing a web interface to provide data-driven insights to our clients and working on a chatbot system. 
-                </p>
-            </div>
-        </div>
-
-        <div class="row snap projects">
-            <h1>Explore My Projects</h1>
-            <br>
-            <div class="myProjects" id="myProjects"></div>
-        </div>
-
     </div>
-
-    <!-- javscript goes here -->
-    <script type="text/javascript" src="js/index.js"></script>
-    
     
 </body>
 </html>

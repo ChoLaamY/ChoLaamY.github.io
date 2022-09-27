@@ -4,7 +4,7 @@ html {
 }
 /* create scrolling gradient bg */
 body {
-    height: 1900px;
+    height: 800px;
     background-image: linear-gradient(180deg, #000033 0%, #15118C 50%, #BFB3FF 100%);
 }
 
@@ -54,7 +54,7 @@ h3 {
     text-decoration: underline;
     text-decoration-color: #FFB319;
 } */
-.navbar-nav li a{
+.navbar-nav a{
     display: block;
     color: #F2F2F2;
     font-size: 16px;
@@ -63,14 +63,18 @@ h3 {
     text-decoration: none;
     text-align: left;
     height: 80px;
+    /* padding: 50px 30px; */
+}
+.navbar-nav li a {
     padding: 50px 30px;
 }
 .navbar-nav li a:hover{
     background-color: inherit;
     color: #FFB319;
+    /* text-decoration: initial; */
 }
 .active a,
-.active li,
+.active li a,
 .active a:hover,
 .active a.visted {
     text-decoration: underline;
@@ -152,63 +156,14 @@ h3 {
     color: #FFB319;
 }
 
-/* style profile */
-.profile {
-    display: block; 
-    margin: 0 auto;
-    text-align: center;
-    height: 100%;
-}
-#profileImage {
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
-}
-
-/* styling intro */
-.intro {
-    width: 60%;
-    display: block; 
-    margin: 100px auto;
-    text-align: center;
-}
-#introBox {
-    margin-top: 15%;
-    margin-bottom: 15%;
-    /* background-color: #BFB3FF; */
-    padding: 20px;
-}
-#introText {
-    font-size: 20px;
-    color: #BFB3FF;
-}
-
-/* styling icons */
-.projects {
+/* center iframe */
+.embedResume {
     display: block; 
     justify-content: center;
     margin: 0 auto;
     text-align: center;
 }
-/* .iconsContainer {
-    border-radius: 50%;
-    border: #000033 solid 2px;
-} */
-.icons {
-    height: 50%;
-    width: 50%;
+/* style title */
+#resumeTitle {
+    margin-left: 10%;
 }
-
-/* make div sap into place on scroll */
-.snap {
-    scroll-snap-stop: always;
-    scroll-margin: 50px;
-}
-
-/* .sticky {
-    position: -webkit-sticky !important; 
-    position: sticky !important;
-    top: 0;
-    align-self: flex-start;
-    height: auto;
-} */
