@@ -1,0 +1,157 @@
+/* stylesheet for into page */
+html {
+    scroll-behavior: auto;
+}
+/* create scrolling gradient bg */
+body {
+    height: 800px;
+    background-image: linear-gradient(180deg, #000033 0%, #15118C 50%, #BFB3FF 100%);
+}
+
+/* styling class row */
+.row {
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+
+/* font family Tahoma */
+a {
+    font-family: Tahoma;
+}
+h1 {
+    font-family: Tahoma; 
+    /* font-weight: 550;  */
+    color: white;
+}
+h3 {
+    font-family: Tahoma; 
+    color: white;
+}
+
+/* custom styling for the nav bar */
+.navbar-custom {
+    /* background-image: linear-gradient(145deg, #000033 0%, #000033 15%, #15118C 50%, #BFB3FF 100%); */
+    background-color: #000033;
+    height: 80px;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    height: 80px;
+}
+.navbar-header a{
+    height: 80px;
+    padding: 45px 10px;
+    padding-left: 25px;
+    font-size: 30px;
+}
+.navbar-header a:hover {
+    /* background-color: navy; */
+    color: #FFB319;
+}
+/* .navbar-header .active {
+    color: #FFB319;
+    text-decoration: underline;
+    text-decoration-color: #FFB319;
+} */
+.navbar-nav a{
+    display: block;
+    color: #F2F2F2;
+    font-size: 16px;
+    font-family: Tahoma;
+    /* text-size-adjust: 100px; */
+    text-decoration: none;
+    text-align: left;
+    height: 80px;
+    /* padding: 50px 30px; */
+}
+.navbar-nav li a {
+    padding: 50px 30px;
+}
+.navbar-nav li a:hover{
+    background-color: inherit;
+    color: #FFB319;
+    /* text-decoration: initial; */
+}
+.active a,
+.active li a,
+.active a:hover,
+.active a.visted {
+    text-decoration: underline;
+    text-decoration-color: #FFB319;
+    text-underline-offset: 10px;
+    /* background-color: #110066; 
+    color: #00E6E6 !important; */
+}
+/* styling for dropdown on nav bar */
+.nav-dropdown {
+    float: left;
+    overflow: hidden;
+}
+.nav-dropdown .nav-dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 48.5px 30px;
+    background-color: inherit;
+    font-family: Tahoma;
+    margin: 0;
+}
+.nav-dropdown:hover .nav-dropbtn {
+    /* background-color: navy; */
+    color: #FFD500;
+}
+.project-selection {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.project-selection a {
+    float: none;
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.project-selection a:hover {
+    background-color: #00E6E6;
+    color: black;
+}
+.nav-dropdown:hover .project-selection {
+    display: block;
+}
+.nav-dropdown .active {
+    background-color: #110066;
+    color: #FFD500;
+}
+.project-selection .active a {
+    background-color: #FFD500;
+    color: black;
+}
+
+/* styling icons */
+#github-icon {
+    font-size: 50px;
+    justify-content: right;
+    color: white;
+    height: 80px;
+    padding: 25px 30px;
+    padding-right: 60px;
+}
+#linkedin-icon {
+    font-size: 50px;
+    justify-content: right;
+    color: white;
+    height: 80px;
+    padding: 25px 15px;
+    /* padding-right: 60px; */
+}
+#github-icon:hover,
+#linkedin-icon:hover {
+    color: #FFB319;
+}

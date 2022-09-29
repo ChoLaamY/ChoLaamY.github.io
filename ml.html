@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cho Laam</title>
-     <!-- include a stylesheet to style the webpage -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- MUST reference the jQuery and bootstrap libraries -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- include a stylesheet to style the webpage -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MUST reference the jQuery and bootstrap libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-     <!-- stylesheet -->
-     <link rel="stylesheet" href="css/resume.css">
+    <!-- d3 libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/ml.css">
+
 </head>
 
 <body>
@@ -28,8 +33,8 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#myProjects">Projects</a></li>
-                <li class="active"><a class="active" href="resume.html">Resume</a></li>
+                <li class="active"><a class="active" href="index.html#myProjects">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="navbar-right">
@@ -44,23 +49,14 @@
         </div>
     </nav>
 
-    <!-- resume -->
-    <div class="contaier-fluid">
+    <div class="container-fluid">
         <div class="row" style="margin-top: 100px;">
             <div class="col-md-12">
-                <h1 id="resumeTitle">My Resume</h1>
-                <div id="loadingGif">
-                    <object data="image/loading.svg"></object>
-                </div>
-                <div class="embedResume" style="visibility: hidden;">
-                    <iframe id="myResume" src="files/Resume - Cho Laam Yuen.pdf" width="80%", height="600px"></iframe>
-                </div>
+                <h1>Machine Learning Projects</h1>
+                <!-- <h3>R Shiny</h3> -->
             </div>
         </div>
     </div>
-
-    <!-- javascript goes here-->
-    <script type="text/javascript" src="js/resume.js"></script>
     
 </body>
 </html>

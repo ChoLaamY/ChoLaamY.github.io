@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cho Laam</title>
+    <!-- include a stylesheet to style the webpage -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MUST reference the jQuery and bootstrap libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- d3 libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/dataviz.css">
+
+</head>
+
+<body>
+    <!-- creating a fixed navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- <a class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="logo">
+                </a> -->
+                <a class="navbar-brand" href="index.html">Cho Laam</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="about.html">About Me</a></li>
+                <li class="active"><a class="active" href="index.html#myProjects">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="https://www.linkedin.com/in/cholaam-yuen/" target="_blank">
+                    <i class="fa fa-linkedin" id="linkedin-icon"></i>
+                </a>
+                <a href="https://github.com/ChoLaamY" target="_blank">
+                    <i class="fa fa-github"  id="github-icon"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-12">
+                <h1>Data Visualization Projects</h1>
+
+                <!-- circles for each project -->
+                <div class="vizProjects" id="vizProjects"></div>
+
+                <!-- learn more buttons -->
+                <div class="learnMoreTop">
+                    <div class="col-md-6">
+                        <button class="button" id="shinyButton">
+                            <a class="button" href="https://cholaamy.shinyapps.io/Sustainability/" target="_blank">
+                                Link to Website
+                            </a>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="button" id="airbnbButton">
+                            <a class="button" href="" target="_blank">
+                                See Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="learnMoreBot">
+                    <div class="col-md-6">
+                        <button class="button" id="winterButton">
+                            <a class="button" href="" target="_blank">
+                                See Project
+                            </a>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="button" id="kickstarterButton">
+                            <a class="button" href="" target="_blank">
+                                See Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- info about each project -->
+                <div class="info" id="sustainability" style="display: none;">
+                    <h3>R Shiny App: Visual Examination of Carbon Emissions and Environmental Policy</h3>
+                    <p>Check out the website
+                    </p>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="js/dataviz.js"></script>
+    
+</body>
+</html>

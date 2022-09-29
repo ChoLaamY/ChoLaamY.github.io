@@ -5,8 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cho Laam</title>
+    <!-- include a stylesheet to style the webpage -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MUST reference the jQuery and bootstrap libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- d3 libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/research.css">
+
 </head>
+
 <body>
+    <!-- creating a fixed navbar -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- <a class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="logo">
+                </a> -->
+                <a class="navbar-brand" href="index.html">Cho Laam</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="about.html">About Me</a></li>
+                <li class="active"><a class="active" href="index.html#myProjects">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="https://www.linkedin.com/in/cholaam-yuen/" target="_blank">
+                    <i class="fa fa-linkedin" id="linkedin-icon"></i>
+                </a>
+                <a href="https://github.com/ChoLaamY" target="_blank">
+                    <i class="fa fa-github"  id="github-icon"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-12">
+                <div class="researchProjects">
+                    <h1>Research Projects</h1>
+                    <!-- circles for each project -->
+                    <div class="myResearch" id="myResearch"></div>
+
+                    <div class="learnMore">
+                        <div class="col-md-6">
+                            <button class="button" id="emotionButton">
+                                <a class="button" href="files/Percieved Emotional Simialrity - Cho Laam Yuen.pdf" target="_blank">
+                                    Learn More
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="button" id="learnButton">
+                                <a class="button" href="files/Learning for Yourself versus Learning for Others - Cho Laam Yuen.pdf" target="_blank">
+                                    Learn More
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- info about each project -->
+                    <div id="emotionalSim" style="display: none;">
+                        <h3>Effect of Perceived Emotional Similarity within Teams on Organizational Outcomes</h3>
+                        <p>In this analytical project I examined whether increased perceived emotional similarity 
+                            between co-workers working in teams will have a positive impact on organizational outcomes 
+                            (e.g. worker productivity and job satisfaction) and predict shared reality. 
+                            I built a mixed model to answer this question, accounting for greater perceived emotional similarity 
+                            of individuals within teams compared to between teams. <br>
+                            <i>*I am currently working the manuscript for this paper</i>
+                        </p>
+                        <br>
+                    </div>
+
+                    <div id="learning" style="display: none;">
+                        <h3>Learning for Yourself vs. Learning for Others</h3>
+                        <p>This experimental study investigated decision making and whether it would change 
+                            as a function of how one learns information. Specifically, whether one’s initial intention to learn information 
+                            for the self as opposed to learning to inform others would alter recommendations subsequently made. 
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/Research.js"></script>
     
 </body>
 </html>
