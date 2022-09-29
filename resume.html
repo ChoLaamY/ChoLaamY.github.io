@@ -52,17 +52,23 @@
         </div>
     </nav>
 
-    <!-- resume info -->
+    <!-- resume -->
     <div class="contaier-fluid">
         <div class="row" style="margin-top: 100px;">
             <div class="col-md-12">
                 <h1 id="resumeTitle">My Resume</h1>
-                <div class="embedResume">
-                    <iframe src="files/Resume - Cho Laam Yuen.pdf" width="80%", height="600px"></iframe>
+                <div id="loadingGif">
+                    <object data="image/loading.svg"></object>
+                </div>
+                <div class="embedResume" style="visibility: hidden;">
+                    <iframe id="myResume" src="files/Resume - Cho Laam Yuen.pdf" width="80%", height="600px"></iframe>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- javascript goes here-->
+    <script type="text/javascript" src="js/resume.js"></script>
     
 </body>
 </html>

@@ -163,6 +163,13 @@ h3 {
     margin: 0 auto;
     text-align: center;
 }
+#loadingGif {
+    display: block; 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15%;
+}
 /* style title */
 #resumeTitle {
     margin-left: 10%;
