@@ -78,51 +78,43 @@ const clickCircle = function(event, d) {
     var selectedProj = d;
     // return console.log(selectedProj)
 
-    if (selectedProj === 'shiny' | selectedProj === 'airbnb') {
-        svg.selectAll('circle')
-            .attr('cy', (d, i) => {
-                if (d === 'olympic') {
-                    return height / 2
-                } else if (d === 'kickstarter') {
-                    return height / 2
-                } else {
-                    return height / 3.5
-                }
-            })
-        // svg.selectAll('.labels')
-        //     .style('font-color', d => {
-        //         // return '#FFB319'
-        //         if (d !== selectedProj) {
-        //             return 'white'
-        //         } else {
-        //             return '#FFB319'
-        //         }
-        //     });
+    // if (selectedProj === 'shiny' | selectedProj === 'airbnb') {
+    //     svg.selectAll('circle')
+    //         .attr('cy', (d, i) => {
+    //             if (d === 'olympic') {
+    //                 return height / 2
+    //             } else if (d === 'kickstarter') {
+    //                 return height / 2
+    //             } else {
+    //                 return height / 3.5
+    //             }
+    //         });
 
-        // svg.selectAll('svg:image')
-        //     .attr('y', (d, i) => {
-        //         if (d === 'olympic') {
-        //             return margin.left * 2
-        //         } else if (d === 'kickstarter') {
-        //             return margin.left * 2
-        //         } else {
-        //             return margin.left * 1.5
-        //         }
-        //     })
+    //     // svg.selectAll('.labels')
+    //     //     .style('font-color', d => {
+    //     //         // return '#FFB319'
+    //     //         if (d !== selectedProj) {
+    //     //             return 'white'
+    //     //         } else {
+    //     //             return '#FFB319'
+    //     //         }
+    //     //     });
+
+    //     // svg.selectAll('svg:image')
+    //     //     .attr('y', (d, i) => {
+    //     //         if (d === 'olympic') {
+    //     //             return margin.left * 2
+    //     //         } else if (d === 'kickstarter') {
+    //     //             return margin.left * 2
+    //     //         } else {
+    //     //             return margin.left * 1.5
+    //     //         }
+    //     //     })
         
-        // svg.selectAll('.labels')
-        //     .attr('y', (d, i) => {
-        //         // return  console.log(d)
-        //         if (d === 'olympic') {
-        //             return ((row[i] + margin.top) * 10)
-        //         } else {
-        //             return ((row[i] + margin.top) * 7.8)
-        //         }
-        //     });
-    } else {
-        svg.selectAll('circle')
-            .attr('cy', (d, i) => { return height / 3.5 })
-    }
+    // } else {
+    //     svg.selectAll('circle')
+    //         .attr('cy', (d, i) => { return height / 3.5 })
+    // }
 
     // if (selectedProj === 'Team') { 
     //     // info
