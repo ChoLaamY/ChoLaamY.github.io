@@ -69,10 +69,10 @@ const mouseLeave = function(event, d) {
 }
 
 // define click function
-var emotionInfo = document.querySelector('#emotionalSim')
-var emotionButton = document.querySelector('#emotionButton')
-var learningInfo = document.querySelector('#learning')
-var learnButton = document.querySelector('#learnButton')
+// var emotionInfo = document.querySelector('#emotionalSim')
+// var emotionButton = document.querySelector('#emotionButton')
+// var learningInfo = document.querySelector('#learning')
+// var learnButton = document.querySelector('#learnButton')
 
 const clickCircle = function(event, d) {
     var selectedProj = d;
@@ -189,8 +189,17 @@ const circles = svg.selectAll('.myCircles')
                                     ${row[i] * (margin.left * 3.3) - (margin.top * 2)})`
                 });
 
+// create an array with all the links
+var links = ['https://cholaamy.shinyapps.io/Sustainability/',
+            '../files/Airbnb.html', '../files/winterOlympics.html', '../files/kickstarter.html']
+
 // add a tag for link on click
-circles.append('circle')
+circles.append('svg:a')
+        .attr('xlink:href', (d, i) => {
+            return links[i];
+        })
+        .attr('target', '_blank')
+        .append('circle')
         .attr('cx', (d, i) => {(margin.left * 2) * i})    // {200 * i}
         .attr('cy', height / 3.5)
         .attr('r', width / 10)
@@ -200,8 +209,8 @@ circles.append('circle')
         .attr('stroke', null)
         .on('mouseover', mouseOver)
         .on('mousemove', mouseMove)
-        .on('mouseout', mouseLeave)
-        .on('click', clickCircle);
+        .on('mouseout', mouseLeave);
+        // .on('click', clickCircle);
 
 // add images on top of circles
 var icon = circles.append('svg:image')
