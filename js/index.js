@@ -99,7 +99,16 @@ circles.append('svg:a')
             } else if (d === 'Data Visualization') {
                 return 'dataviz.html'
             } else if (d === 'Machine Learning') {
-                return 'ml.html'
+                return 'https://github.com/ChoLaamY/Youtube_Thumbnail_Classification'
+            }
+        })
+        .attr('target', d=> {
+            if (d === 'Research') {
+                return null
+            } else if (d === 'Data Visualization') {
+                return null
+            } else if (d === 'Machine Learning') {      // link directly to github and open a new tab
+                return '_blank'
             }
         })
         .append('circle')
